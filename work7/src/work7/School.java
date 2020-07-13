@@ -5,12 +5,11 @@ public class School {
 	public static void main(String[] args) {
 		// インスタンス化
 		Student s = new Student();
-		// 自己紹介（1回目）
-		s.introduction();
-		// 年齢の計算
-		s.ageCalculation();
-		// 自己紹介（2回目）
-		s.introduction();
+		// 住所の設定
+		s.setAddress("東京都中央区");
+		// 住所の取得
+		String address = s.getAddress();
+		System.out.println("住所は" + address + "です");
 	}
 
 }
